@@ -11,7 +11,7 @@ This paper examines the relationship between community college enrollment patter
 Using data on cohorts of first-time community college students at five colleges in a single state, the author finds that, over an 18-semester period, 10 patterns of attendance account for nearly half the students. Among the remaining students who persisted, there is astounding variation in their patterns of enrollment. Clustering these patterns reveals two relationships: the first is a positive association between enrollment continuity and earning a community college credential, and the second is a positive association between enrollment intensity and likelihood of transfer. 
 
 ### Shiny+R
-The repository also contains the R/Shiny files for an interactive web application that allows users to create enrollment pattern graphics on demand for various subgroups.
+The repository also contains the R/Shiny files for an interactive web application that allows users to create enrollment pattern graphics on demand for various subgroups. The Shiny site is meant to be a companion to the paper; it uses a more extensive database and allows individuals to further explore issues discussed in the paper. This application has been hosted at http://chagall.tc.columbia.edu/shiny/eps/. However, this is not a production server and thus there is no guarantee of availability.
 
 ### Data Issue
 Due to privacy issues, I am not able to link directly to the data that is used in these analyses. At some point I will create a noisy version of the data that is fit for use in these programs without violating data sharing agreements.
