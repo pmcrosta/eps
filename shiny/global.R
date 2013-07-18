@@ -1,3 +1,6 @@
+## global.R for Enrollment Patterns shiny app
+## Peter M Crosta (pmcrosta@gmail.com)
+
 ## Load in smaller dataset constructed for web application use
 ## This is in global file so that browser reload does not take long reloading data.
 load("./data/ep_shiny.Rdata")

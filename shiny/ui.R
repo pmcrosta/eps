@@ -1,3 +1,6 @@
+## ui.R for Enrollment Patterns shiny app
+## Peter M Crosta (pmcrosta@gmail.com)
+
 shinyUI(pageWithSidebar(
     
   headerPanel("Custom Enrollment Patterns Tool Prototype - version 1.5"),
@@ -10,10 +13,7 @@ shinyUI(pageWithSidebar(
     strong("Please select from the following options and subgroups:"), br(),
   helpText("Use this box to switch between attachment patterns and intensity patterns."),
   checkboxInput("ftpt", "Toggle Attachment/Intensity", value=FALSE), br(),
-#   sliderInput(inputId = "amount",
-#               label = "Amount of something",
-#               min = 1, max = 100, value = 20, step = 1),
-# 
+
   helpText("Use these boxes to look at certain student groups."),
   radioButtons(inputId="collxfer", label="Transfer Status", choices=c("Transferred  "="collxfer", "Not transferred  "="nocollxfer", "All"="allxfer")),
   radioButtons(inputId="collxferprog", label="Programs", choices=c("Transfer (AA/AS/AFA)  "="collxferprog", "AAS  "="aas", "All"="allprog")),
@@ -46,13 +46,9 @@ shinyUI(pageWithSidebar(
                 value = FALSE),
   br(), 
   wellPanel(p("Images represent enrollment patterns for FTIC students who began in Fall 2003. In Attachment image, orange indicates credit was attempted. In Intensity image, orange indicates full-time and blue indicates part-time. Intensity in four-year schools is estimated from NSC data. Terms are numbered such that 1 is Fall, 2 is Spring, 3 is Summer, etc."))
-  #conditionalPanel(condition="$('div#baseline').text()=='' || $('html').hasClass('shiny-busy')", img(src="loading.gif")),
-  #conditionalPanel(condition="!($('div#baseline').text()=='' || $('html').hasClass('shiny-busy'))", br()),
-  ),
+   ),
   
   mainPanel(
-  
-#     h2("Output"), 
     plotOutput(outputId = "graphsoutput", height = "800px"),
     textOutput(outputId="enequal"),
     textOutput(outputId="oequal"),

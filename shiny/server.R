@@ -1,12 +1,10 @@
-options(scipen=3)
-lunique <- function(x) length(unique(x))
-pdensity <- function(x) plot(density(x, na.rm=T))
-r2 <- function(x) round(x,2)
-r3 <- function(x) round(x,3)
+## Server.R for Enrollment Patterns shiny app
+## Peter M Crosta (pmcrosta@gmail.com)
 
 library(stringr)
 library(scales)
 
+## Functions to return coordinate location on image for indicators of transfer or degree receipt.
 tran.coords <- function(plotback,...) {
   attch_awrd <- data.frame(rownames(plotback))
   attch_awrd$aterm <- earliest4_rt[match(attch_awrd$rownames.plotback.,names(earliest4_rt))]
@@ -39,8 +37,6 @@ ba.coords <- function(plotback,...) {
   attch_awrd$y <- cumsum(attch_awrd$y_prime)
   return(attch_awrd[,c("x", "y")])
 }
-
-#sset <- TRUE
 
 shinyServer(function(input, output) {
   
@@ -109,7 +105,6 @@ shinyServer(function(input, output) {
     
     ## identify subset
     studset <- intersect(studsetdev, intersect(studsetcollxferprog, intersect(studsetcollxfer, intersect(intersect(studsetsex, studsetrace), studsetcoll))))
-    #if (length(studset)==0) studset <- unique(demoset$studentid)
     sset <- rownames(attachment.df) %in% studset
     
     output$enequal <- reactiveText(function() {
