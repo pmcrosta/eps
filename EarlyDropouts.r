@@ -1,10 +1,6 @@
-#######################
-# INPUT DATASETS: termpat.Rdata
-# OUTPUT DATASETS: TBD
-# PREVIOUS PROGRAMS: EnrollmentPatterns.r
-# FOLLOWING PROGRAMS: TBD
-# $Id: EarlyDropouts.r 79 2012-08-10 17:29:37Z crosta $
-###############################################
+## Code for Early Dropouts CCRC Analytics
+## Peter M Crosta (pmcrosta@gmail.com)
+
 stop("Don't run this all at once.")
 library(ggplot2)
 library(descr)
@@ -12,6 +8,7 @@ library(pastecs)
 options(scipen=100)
 options(digits=7)
 
+## Depends on data cleaned in EnrollmentPatterns.r
 setwd("/projects/CBD/crosta/intensity")
 load("termpat.Rdata")
 

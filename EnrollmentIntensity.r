@@ -1,19 +1,12 @@
-####### HEADER ##################### 
-# INPUT DATASETS: termpat.Rdata
-# OUTPUT DATASETS: TBD
-# PREVIOUS PROGRAMS: EnrollmentPatterns.r
-# FOLLOWING PROGRAMS: TBD
-# $Id: EnrollmentIntensity.r 122 2013-06-19 01:11:17Z crosta $
-####### HEADER #####################
+## Code for enrollment patterns paper and analytic
+## Peter M Crosta (pmcrosta@gmail.com)
+
 stop("Don't run this all at once.")
 library(ggplot2)
-#library(etm)
 library(descr)
 library(scales)
 options(descr.plot = FALSE)
 library(stringr)
-# library(mixcat)
-#library(nnet)
 options(scipen=100)
 options(digits=7)
 

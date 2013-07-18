@@ -1,10 +1,6 @@
-#######################
-# INPUT DATASETS: JBL raw data
-# OUTPUT DATASETS: TBD
-# PREVIOUS PROGRAMS: TBD
-# FOLLOWING PROGRAMS: EnrollmentIntensity.r
-# $Id: EnrollmentPatterns.r 66 2012-06-13 20:27:36Z crosta $
-###############################################
+## Mostly data cleaning code for work with enrollment patterns
+## Peter M Crosta (pmcrosta@gmail.com)
+
 stop("Don't run this all at once.")
 library(foreign)
 library(parallel)
