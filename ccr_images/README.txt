@@ -9,7 +9,6 @@ Figure 3: Image of All Enrollment Patterns Showing When Students Graduate
 
 Figure 4: Image of All Enrollment Patterns Showing When Students Transfer
 
-For Figure A.1: Enrollment Patterns for Full-Time Persisters (top), Early Leavers (middle), and Early Persistent Switchers (bottom)
+For Figure A1: Enrollment Patterns for Full-Time Persisters (top), Early Leavers (middle), and Early Persistent Switchers (bottom)
 
-For Figure A.2: 
-Enrollment Patterns for Mostly Part-Timers (top), Early Attachers (middle), and Later Attachers (bottom)
+For Figure A2: Enrollment Patterns for Mostly Part-Timers (top), Early Attachers (middle), and Later Attachers (bottom)
